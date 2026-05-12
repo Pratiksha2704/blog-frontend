@@ -1,5 +1,4 @@
-
-
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,9 +11,6 @@ import CreatePost from "./pages/createPost";
 import Register from "./pages/Register";
 
 function App() {
-  
-
-
   return (
     <div className="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen flex flex-col">
       <Navbar />
