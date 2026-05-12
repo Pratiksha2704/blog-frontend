@@ -4,11 +4,12 @@ import BlogCard from "../components/BlogCard";
 function Home() {
   const [blogs, setBlogs] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
-      .then(res => res.json())
-      .then(data => setBlogs(data));
-  }, []);
+ useEffect(() => {
+  fetch("https://reactblog-backend-4.onrender.com/api/blogs")
+    .then(res => res.json())
+    .then(data => setBlogs(data))
+    .catch(err => console.log(err));
+}, []);
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-10">
