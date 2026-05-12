@@ -12,7 +12,7 @@ function CreatePost() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://reactblog-backend-4.onrender.com/api/posts", {
+      const response = await fetch("https://reactblog-backend-4.onrender.com/api/blogs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
